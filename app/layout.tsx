@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+import NavigationBar from "@/components/NavigationBar";
+
 export const metadata: Metadata = {
   title: "Bracket Buddy",
   description: "MOSH Volleyball",
@@ -13,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <NavigationBar />
+        {children}
+      </body>
     </html>
   );
 }

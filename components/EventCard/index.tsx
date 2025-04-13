@@ -16,7 +16,7 @@ export function EventCard({ event }: EventCardProps) {
   });
 
   return (
-    <Link href={`/event/${event.id}`}>
+    <Link href={`/events/${event.id}`}>
       <div className={styles.eventCard}>
         {/* Image Container */}
         <div className={styles.eventCardImageContainer}>

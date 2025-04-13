@@ -1,5 +1,9 @@
 import { redirect } from "next/navigation";
 
-export default function Custom404() {
-  redirect("/");
+export default async function Custom404() {
+  const isOff = true;
+
+  if (!isOff) {
+    redirect("/");
+  }
 }

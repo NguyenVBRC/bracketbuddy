@@ -39,7 +39,7 @@ export function EventCard({ event }: EventCardProps) {
 
           {/* Location */}
           <div className={styles.eventCardInfo}>
-            <MapPin className={styles.eventCardUicon} />
+            <MapPin className={styles.eventCardIcon} />
             <span>{event.location}</span>
           </div>
         </div>

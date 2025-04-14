@@ -27,4 +27,8 @@ a {
 button {
   border: solid 1px black;
   cursor: pointer;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: #2563eb;
+  color: white;
 }

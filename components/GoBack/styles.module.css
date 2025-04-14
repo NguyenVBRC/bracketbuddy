@@ -1,0 +1,8 @@
+.arrowContainer {
+  display: flex;
+  align-items: center;
+  margin: 16px 0;
+  width: fit-content;
+  cursor: pointer;
+  gap: 8px;
+}

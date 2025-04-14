@@ -1,51 +1,46 @@
 import { Event } from "./types";
+import endofsummer from "./endofsummer.png";
+import rockoween from "./rockoween.png";
+import turkeytrot from "./turkeytrot.png";
 
 export const events: Event[] = [
   {
     id: "1",
-    title: "Summer Championship Series",
-    date: "2024-06-15",
-    location: "Phoenix Arena, Arizona",
-    imageUrl:
-      "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=80&w=1000",
+    title: "End of Summer",
+    date: "2025-09-28",
+    location: "MOSH Performance Center",
+    imageUrl: endofsummer,
     description:
-      "Annual summer championship featuring top teams from across the region.",
+      "This tournament series will include two different events. Saturday morning will be reverse quads (pure) and Saturday evening will be men's and women's triples. Each event will consist of pool play followed by a single elimination tournament.",
     maxTeams: 16,
     registeredTeams: 14,
-    schedule: [
-      {
-        id: "1",
-        team1: "Phoenix Flames",
-        team2: "Desert Storm",
-        time: "14:30",
-      },
-      {
-        id: "2",
-        team1: "Thunder Squad",
-        team2: "Valley Vikings",
-        time: "15:45",
-      },
-      {
-        id: "3",
-        team1: "Mountain Lions",
-        team2: "River Rapids",
-        time: "17:00",
-      },
-    ],
+    schedule: [],
+    formats: ["COED Quads", "Pure Reverse", "Triples"],
   },
   {
     id: "2",
-    title: "Spring Invitational",
-    date: "2024-04-20",
-    location: "Central Stadium, Texas",
-    imageUrl:
-      "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=1000",
-    description: "Elite invitation-only tournament featuring the best teams.",
+    title: "Rock O' Ween",
+    date: "2025-10-11",
+    location: "MOSH Performance Center",
+    imageUrl: rockoween,
+    description:
+      "This tournament series will include four different events over the course of three days and will include something for everyone! The Friday evening events will include coed quads or reverse quads (pure), Saturday will be king / queen 4's (high / low), and Sunday will be men's and women's triples.",
     maxTeams: 12,
     registeredTeams: 8,
-    schedule: [
-      { id: "1", team1: "Star Strikers", team2: "Golden Goals", time: "13:00" },
-      { id: "2", team1: "Royal Raiders", team2: "Elite Eagles", time: "14:15" },
-    ],
+    schedule: [],
+    formats: ["COED Quads", "Pure Reverse", "Triples"],
+  },
+  {
+    id: "3",
+    title: "Turkey Trot",
+    date: "2025-11-15",
+    location: "MOSH Performance Center",
+    imageUrl: turkeytrot,
+    description:
+      "This tournament series will include three different events over the course of two days. The Friday evening events will include coed quads or reverse quads (power) and Saturday evening will be men's and women's triples.",
+    maxTeams: 12,
+    registeredTeams: 8,
+    schedule: [],
+    formats: ["COED Quads", "Pure Reverse", "Triples"],
   },
 ];

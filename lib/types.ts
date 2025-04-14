@@ -3,11 +3,12 @@ export interface Event {
   title: string;
   date: string;
   location: string;
-  imageUrl: string;
+  imageUrl: any;
   description: string;
   maxTeams: number;
   registeredTeams: number;
   schedule: Match[];
+  formats: string[];
 }
 
 export interface Match {

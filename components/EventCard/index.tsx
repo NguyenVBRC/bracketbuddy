@@ -8,7 +8,7 @@ interface EventCardProps {
 }
 
 export function EventCard({ event }: EventCardProps) {
-  const formattedDate = new Date(event.date).toLocaleDateString("en-US", {
+  const formattedDate = new Date(event.startDate).toLocaleDateString("en-US", {
     weekday: "long",
     year: "numeric",
     month: "long",

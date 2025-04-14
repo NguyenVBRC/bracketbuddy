@@ -1,7 +1,16 @@
 .container {
   max-width: 64rem; /* Tailwind max-w-4xl */
-  margin: 64px auto 0;
+  margin: 0 auto;
   padding: 1rem;
+}
+
+.arrowContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  width: fit-content;
+  cursor: pointer;
+  gap: 8px;
 }
 
 .card {
@@ -40,13 +49,15 @@
 .metaGroup {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  gap: 4px;
+  margin-bottom: 3rem;
 }
 
 @media (min-width: 640px) {
   .metaGroup {
     flex-direction: row;
+    justify-content: space-between;
+    margin-right: 48px;
   }
 }
 
@@ -62,11 +73,6 @@
   margin-right: 0.5rem;
 }
 
-.description {
-  color: #4b5563;
-  margin-bottom: 2rem;
-}
-
 .scheduleWrapper {
   margin-bottom: 2rem;
 }
@@ -74,7 +80,7 @@
 .scheduleTitle {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .scheduleList {
@@ -112,22 +118,133 @@
   color: #4b5563;
 }
 
-.registerButton {
-  width: 100%;
+.tournamentWrapper {
+  margin-bottom: 32px;
+}
+
+.dateSelector {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+}
+
+.dateButton {
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  background-color: #f3f4f6;
+  color: #374151;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dateButton:hover {
+  background-color: #e5e7eb;
+}
+
+.activeDateButton {
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-weight: 500;
+  white-space: nowrap;
   background-color: #2563eb;
   color: white;
-  padding: 0.75rem 2rem;
-  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
   font-weight: 600;
-  transition: background-color 0.2s ease-in-out;
+  margin-bottom: 24px;
+}
+
+.categoryGrid {
+  display: grid;
+  gap: 24px;
+}
+
+.categoryCard {
+  background-color: #f9fafb;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.categoryContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 @media (min-width: 640px) {
-  .registerButton {
-    width: auto;
+  .categoryContent {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
-.registerButton:hover {
+.categoryName {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.categoryDescription {
+  color: #4b5563;
+  margin-bottom: 8px;
+}
+
+.categoryTime {
+  display: flex;
+  align-items: center;
+  color: #4b5563;
+}
+
+.clockIcon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.categoryActions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (min-width: 640px) {
+  .categoryActions {
+    align-items: flex-end;
+  }
+}
+
+.teamStatus {
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin-bottom: 8px;
+}
+
+.signUpButton {
+  background-color: #2563eb;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.signUpButton:hover {
   background-color: #1d4ed8;
+}
+
+.categoryFull {
+  color: #dc2626;
+  font-weight: 600;
 }

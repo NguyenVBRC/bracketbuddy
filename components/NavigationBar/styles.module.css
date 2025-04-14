@@ -1,6 +1,8 @@
 .navContainer {
   padding: 16px 32px;
   background-color: #ffff;
+  /* border-bottom: solid 1px black; */
+  box-shadow: 0 4px 6px #0000001a;
 }
 
 .navContainer a {

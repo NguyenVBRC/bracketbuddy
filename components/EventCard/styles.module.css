@@ -23,12 +23,16 @@
 
 .eventCardContent {
   padding: 1rem;
+  border-top: solid 1px #0000001a;
 }
 
 .eventCardTitle {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .eventCardInfo {

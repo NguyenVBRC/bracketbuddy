@@ -21,7 +21,7 @@ export function EventCard({ event }: EventCardProps) {
         {/* Image Container */}
         <div className={styles.eventCardImageContainer}>
           <img
-            src={event.imageUrl}
+            src={event.imageUrl.src}
             alt={event.title}
             className={styles.eventCardImage}
           />

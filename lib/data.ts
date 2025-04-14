@@ -24,13 +24,6 @@ export const events: Event[] = [
             registeredTeams: 18,
             startTime: "14:00",
           },
-          {
-            id: "friday-juniors",
-            name: "Junior Division",
-            maxTeams: 16,
-            registeredTeams: 8,
-            startTime: "10:00",
-          },
         ],
       },
       {
@@ -45,7 +38,7 @@ export const events: Event[] = [
           },
           {
             id: "saturday-doubles",
-            name: "Pro Doubles",
+            name: "Doubles",
             maxTeams: 24,
             registeredTeams: 20,
             startTime: "14:00",
@@ -61,13 +54,6 @@ export const events: Event[] = [
             maxTeams: 16,
             registeredTeams: 10,
             startTime: "10:00",
-          },
-          {
-            id: "sunday-finals",
-            name: "Championship Finals",
-            maxTeams: 8,
-            registeredTeams: 0,
-            startTime: "15:00",
           },
         ],
       },
@@ -94,13 +80,6 @@ export const events: Event[] = [
 
             startTime: "14:00",
           },
-          {
-            id: "friday-juniors",
-            name: "Junior Division",
-            maxTeams: 16,
-            registeredTeams: 8,
-            startTime: "10:00",
-          },
         ],
       },
       {
@@ -112,32 +91,6 @@ export const events: Event[] = [
             maxTeams: 32,
             registeredTeams: 28,
             startTime: "09:00",
-          },
-          {
-            id: "saturday-doubles",
-            name: "Pro Doubles",
-            maxTeams: 24,
-            registeredTeams: 20,
-            startTime: "14:00",
-          },
-        ],
-      },
-      {
-        date: "2024-06-16",
-        categories: [
-          {
-            id: "sunday-reverse",
-            name: "Reverse Quads",
-            maxTeams: 16,
-            registeredTeams: 10,
-            startTime: "10:00",
-          },
-          {
-            id: "sunday-finals",
-            name: "Championship Finals",
-            maxTeams: 8,
-            registeredTeams: 0,
-            startTime: "15:00",
           },
         ],
       },
@@ -154,25 +107,6 @@ export const events: Event[] = [
       "This tournament series will include three different events over the course of two days. The Friday evening events will include coed quads or reverse quads (power) and Saturday evening will be men's and women's triples.",
     days: [
       {
-        date: "2024-06-14",
-        categories: [
-          {
-            id: "friday-coed",
-            name: "Friday Coed 4s",
-            maxTeams: 24,
-            registeredTeams: 18,
-            startTime: "14:00",
-          },
-          {
-            id: "friday-juniors",
-            name: "Junior Division",
-            maxTeams: 16,
-            registeredTeams: 8,
-            startTime: "10:00",
-          },
-        ],
-      },
-      {
         date: "2024-06-15",
         categories: [
           {
@@ -181,32 +115,6 @@ export const events: Event[] = [
             maxTeams: 32,
             registeredTeams: 28,
             startTime: "09:00",
-          },
-          {
-            id: "saturday-doubles",
-            name: "Pro Doubles",
-            maxTeams: 24,
-            registeredTeams: 20,
-            startTime: "14:00",
-          },
-        ],
-      },
-      {
-        date: "2024-06-16",
-        categories: [
-          {
-            id: "sunday-reverse",
-            name: "Reverse Quads",
-            maxTeams: 16,
-            registeredTeams: 10,
-            startTime: "10:00",
-          },
-          {
-            id: "sunday-finals",
-            name: "Championship Finals",
-            maxTeams: 8,
-            registeredTeams: 0,
-            startTime: "15:00",
           },
         ],
       },

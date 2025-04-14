@@ -1,14 +1,25 @@
 export interface Event {
   id: string;
   title: string;
-  date: string;
+  startDate: string;
+  endDate: string;
   location: string;
   imageUrl: any;
   description: string;
+  days: TournamentDay[];
+}
+
+export interface TournamentDay {
+  date: string;
+  categories: Category[];
+}
+
+export interface Category {
+  id: string;
+  name: string;
   maxTeams: number;
   registeredTeams: number;
-  schedule: Match[];
-  formats: string[];
+  startTime: string;
 }
 
 export interface Match {
